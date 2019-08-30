@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
  <listeners>
      
         
-        
-         <listener class-name="resources.ExtentReporterNG.java"/>
+         <listener class-name="Academy.listeners"/>
+         <listener class-name="resources.ExtentReporterNG"/>
          
 
  </listeners>
 
-  <test name="AppTest">
+  <test name="Validating User login">
     <classes>
+      <class name="Academy.HomePage"/>
+          </classes>
+      </test>
+      
+    <test name="Validating title in the Page">
+         <classes>
+      <class name="Academy.validateTitle"/>
+       </classes>
+      </test>
+       <test name="App Testing">
+         <classes>
       <class name="Academy.AppTest"/>
-      </classes>
+       </classes>
       </test>
-      
-      <test name="Validating NavigationBar">
-    <classes>
-      <class name="Academy.ValidateNavigationBar"/>
-      </classes>
+            <test name="Validating navigation Bar">
+         <classes>
+      <class name="Academy.validateNavigationBar"/>
+   </classes>
       </test>
-      
-      <test name="Homepage open">
-    <classes>
-      <class name="Academy.Homepage"/>
-      </classes>
-      </test>
-      
-      <test name="Validate Title">
-    <classes>
-      <class name="Academy.ValidateTitle"/>
-    </classes>
-  </test> <!-- Test -->
+   <!-- Test -->
 </suite> <!-- Suite -->

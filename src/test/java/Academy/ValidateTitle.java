@@ -1,54 +1,61 @@
-
 package Academy;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
 import java.io.IOException;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+import resources.base;
 
-import resources.Base;
-
-public class ValidateTitle extends Base{
-	
-	private static Logger log = LogManager.getLogger(Base.class.getName());
+public class validateTitle extends base{
+	 public static Logger log =LogManager.getLogger(base.class.getName());
 	@BeforeTest
-	public void prerequisite() throws IOException
+	public void initialize() throws IOException
 	{
-		driver = InitializeDriver();
-		log.info("driver is initialized");
+	
+		 driver =initializeDriver();
+		 log.info("Driver is initialized");
+			
 		driver.get(prop.getProperty("url"));
-		log.info("Navigated to home page");
-		
+		 log.info("Navigated to Home page");
 	}
-
 	@Test
-	public void baseValidation() throws IOException 
 	
+	public void validateAppTitle() throws IOException
 	{
-		// TODO Auto-generated method stub
 		
-		log.info("driver is initialize");
-		LandingPage lp = new LandingPage(driver);
-		//Assert.assertEquals(lp.gettext(), "Featured Courses");
+		//one is inheritance
+		// creating object to that class and invoke methods of it
+		LandingPage l=new LandingPage(driver);
+		//compare the text from the browser with actual text.- Error..
+		Assert.assertEquals(l.gettitle().getText(), "FEATURED12 COURSES");
+		 log.info("Successfully validated Text message");
+		 System.out.println("Test completed");
+		 
+		;
+	
 		
-		//compare the text from browser with actual value
-		Assert.assertEquals(lp.gettitle().getText(), "FEATURED COURSES");
-		log.info("Successfully validated text msg");
-		Assert.assertTrue(lp.getNavigationbar().isDisplayed());
-	
-	}
-	
+		}
 	@AfterTest
-	public void tear() {
+	public void teardown()
+	{
+		
 		driver.close();
-		driver = null;
+		driver=null;
 		
 	}
+
 	
 
+	
 }
