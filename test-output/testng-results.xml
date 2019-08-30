@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-27T22:14:45 IST" name="Suite" finished-at="2019-08-27T22:15:30 IST" duration-ms="45331">
+    <groups>
+    </groups>
+    <test started-at="2019-08-27T22:14:45 IST" name="AppTest" finished-at="2019-08-27T22:14:45 IST" duration-ms="83">
+      <class name="Academy.AppTest">
+        <test-method signature="testApp()[pri:0, instance:Academy.AppTest@5b0abc94]" started-at="2019-08-27T22:14:45 IST" name="testApp" finished-at="2019-08-27T22:14:45 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- Academy.AppTest -->
+    </test> <!-- AppTest -->
+    <test started-at="2019-08-27T22:14:45 IST" name="Validating NavigationBar" finished-at="2019-08-27T22:14:56 IST" duration-ms="10845">
+      <class name="Academy.ValidateNavigationBar">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:Academy.ValidateNavigationBar@38b27cdc]" started-at="2019-08-27T22:14:45 IST" name="prerequisite" finished-at="2019-08-27T22:14:52 IST" duration-ms="7554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method signature="baseValidation()[pri:0, instance:Academy.ValidateNavigationBar@38b27cdc]" started-at="2019-08-27T22:14:52 IST" name="baseValidation" finished-at="2019-08-27T22:14:53 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseValidation -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:Academy.ValidateNavigationBar@38b27cdc]" started-at="2019-08-27T22:14:53 IST" name="tear" finished-at="2019-08-27T22:14:56 IST" duration-ms="3004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- Academy.ValidateNavigationBar -->
+    </test> <!-- Validating NavigationBar -->
+    <test started-at="2019-08-27T22:14:56 IST" name="Homepage open" finished-at="2019-08-27T22:15:20 IST" duration-ms="23933">
+      <class name="Academy.Homepage">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:Academy.Homepage@7a220c9a]" started-at="2019-08-27T22:14:56 IST" name="prerequisite" finished-at="2019-08-27T22:14:59 IST" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.Homepage@7a220c9a]" started-at="2019-08-27T22:14:59 IST" name="basePageNavigation" data-provider="getdata" finished-at="2019-08-27T22:15:10 IST" duration-ms="10987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arora.priyanka2014@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.Homepage@7a220c9a]" started-at="2019-08-27T22:15:10 IST" name="basePageNavigation" data-provider="getdata" finished-at="2019-08-27T22:15:17 IST" duration-ms="6339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[526634]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:Academy.Homepage@7a220c9a]" started-at="2019-08-27T22:15:17 IST" name="tear" finished-at="2019-08-27T22:15:20 IST" duration-ms="2936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- Academy.Homepage -->
+    </test> <!-- Homepage open -->
+    <test started-at="2019-08-27T22:15:20 IST" name="Validate Title" finished-at="2019-08-27T22:15:30 IST" duration-ms="10398">
+      <class name="Academy.ValidateTitle">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:Academy.ValidateTitle@56673b2c]" started-at="2019-08-27T22:15:20 IST" name="prerequisite" finished-at="2019-08-27T22:15:26 IST" duration-ms="6209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method signature="baseValidation()[pri:0, instance:Academy.ValidateTitle@56673b2c]" started-at="2019-08-27T22:15:26 IST" name="baseValidation" finished-at="2019-08-27T22:15:26 IST" duration-ms="158" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED COURSES12] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES12] but found [FEATURED COURSES]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at Academy.ValidateTitle.baseValidation(ValidateTitle.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseValidation -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:Academy.ValidateTitle@56673b2c]" started-at="2019-08-27T22:15:26 IST" name="tear" finished-at="2019-08-27T22:15:30 IST" duration-ms="4020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- Academy.ValidateTitle -->
+    </test> <!-- Validate Title -->
+  </suite> <!-- Suite -->
+</testng-results>
